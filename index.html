@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>One Piece</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+  <header>
+    <span class="left-word">One</span>&nbsp;<span class="right-word">Piece</span>&nbsp;
+    <img src="./Img/pirate.png" alt="pirate" id="pirate">
+  </header>
+
+  <div class="disScore">
+    <h2><span class="left-word">Your</span>&nbsp;<span class="right-word">Score :</span>&nbsp;</h2>
+    <h2 id="score">0</h2>
+  </div>
+
+  <div class="timing">
+    <h2><span class="left-word">Seconds</span>&nbsp;<span class="right-word">Left :</span>&nbsp;</h2>
+    <h2 id="time-left">60</h2>
+  </div>
+
+  <div class="grid">
+    <div class="square" id="1"></div>
+    <div class="square" id="2"></div>
+    <div class="square" id="3"></div>
+    <div class="square" id="4"></div>
+    <div class="square" id="5"></div>
+    <div class="square" id="6"></div>
+    <div class="square" id="7"></div>
+    <div class="square" id="8"></div>
+    <div class="square" id="9"></div>
+  </div>
+
+  <audio id="audio" controls src="./Audio/hit.mp3" type="audio/mpeg"></audio>
+
+  <div class="gameover">Game Over!</div>
+
+  <button id="restart" onclick="restart()">Restart</button>
+
+  <script src="./js/app.js"></script>
+</body>
+
+</html>
